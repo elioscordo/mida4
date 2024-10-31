@@ -1,0 +1,38 @@
+{% extends 'unfold/layouts/base_simple.html' %}
+{% load static i18n %}
+
+{% load unfold %}
+
+{% block extrahead %}
+
+{% endblock %}
+
+{% block breadcrumbs %}{% endblock %}
+
+{% block title %}
+    {% if subtitle %}
+        {{ subtitle }} |
+    {% endif %}
+
+    {{ title }} | {{ site_title|default:_('Django site admin') }}
+{% endblock %}
+
+{% block branding %}
+    <h1 id="site-name">
+        <a href="{% url 'admin:index' %}">
+            {{ site_header|default:_('Django administration') }}
+        </a>
+    </h1>
+{% endblock %}
+
+{% block content %}
+<h2>Leads</h2>
+{% for lead in  item.leads.all %}
+    <p>{{lead.code}}</p>
+    <div class="symbol-chart" data-symbol="{{lead.code}}" data-indicators="{{item.indicator_instances_str}}" ></div>
+{% endfor %}
+
+<script type="module" crossorigin src="http://localhost:3000/static/js/bundle.js"></script>
+
+<!-- <script src="{% static 'build/static/js/main.ed00299e.js' %}"></script> -->
+{% endblock %}

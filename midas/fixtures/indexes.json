@@ -1,0 +1,82 @@
+[
+    {
+        "model": "midas.Index",
+        "pk": 1,
+        "fields": {
+            "code": "^GSPC",
+            "name": "S&P 500"
+        }
+    },
+    {
+        "model": "midas.Index",
+        "pk": 2,
+        "fields": {
+            "code": "^DJI",
+            "name": "Dow Jones Industrial Average"
+        }
+    },
+    {
+        "model": "midas.Index",
+        "pk": 3,
+        "fields": {
+            "code": "^IXIC",
+            "name": "Nasdaq Composite"
+        }
+    },
+    {
+        "model": "midas.Index",
+        "pk": 4,
+        "fields": {
+            "code": "^RUT",
+            "name": "Russell 2000"
+        }
+    },
+    {
+        "model": "midas.Index",
+        "pk": 5,
+        "fields": {
+            "code": "^FTSE",
+            "name": "FTSE 100"
+        }
+    },
+    {
+        "model": "midas.Index",
+        "pk": 6,
+        "fields": {
+            "code": "^GDAXI",
+            "name": "DAX (Germany)"
+        }
+    },
+    {
+        "model": "midas.Index",
+        "pk": 7,
+        "fields": {
+            "code": "^N225",
+            "name": "Nikkei 225 (Japan)"
+        }
+    },
+    {
+        "model": "midas.Index",
+        "pk": 8,
+        "fields": {
+            "code": "^FCHI",
+            "name": "CAC 40 (France)"
+        }
+    },
+    {
+        "model": "midas.Index",
+        "pk": 9,
+        "fields": {
+            "code": "^HSI",
+            "name": "Hang Seng (Hong Kong)"
+        }
+    },
+    {
+        "model": "midas.Index",
+        "pk": 10,
+        "fields": {
+            "code": "^AXJO",
+            "name": "S&P/ASX 200 (Australia)"
+        }
+    }
+]
